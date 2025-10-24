@@ -17,7 +17,8 @@ vim.keymap.set({"n","v",}, "<C-j>", "ddp")
 -- Saves and quits
 vim.keymap.set({"n","v","i"}, "<C-S>", "<esc>:w!<CR>",{noremap=true,silent=true})
 vim.keymap.set({"n","v","i"}, "<C-Q>", "<esc>:q!<CR>",{noremap=true,silent=true})
-
+-- Sudo write
+vim.keymap.set("n", "<leader>w", "<cmd>w !sudo tee %<CR>",{noremap=true,silent=true}) 
 -- neotree
 vim.keymap.set({"n","v"}, "<leader>e", ":Neotree toggle<CR>",{noremap=true,silent=true})
 
