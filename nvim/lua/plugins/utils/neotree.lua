@@ -3,12 +3,12 @@ return {
   branch = "v3.x",
   dependencies = {
     "nvim-lua/plenary.nvim",
-    "nvim-tree/nvim-web-devicons", 
+    "nvim-tree/nvim-web-devicons",
     "MunifTanjim/nui.nvim",
   },
   lazy = false,
   opts = {
-    window = {  
+    window = {
       position = "left",
       width = 30,
   },
@@ -20,7 +20,7 @@ return {
    end,
     },
     },
-    filesystem = {   
+    filesystem = {
       filtered_items = {
         hide_dotfiles = false,
       },

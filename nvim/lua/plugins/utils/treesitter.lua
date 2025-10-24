@@ -6,8 +6,8 @@ return {
     build = ':TSUpdate',
     opts = {
       ensure_installed = {
-        "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline",
-        "python", "javascript", "bash", "go", "terraform", "ssh_config", "fish"
+        "c", "lua", "vim", "vimdoc",
+        "python", "bash", "go", "fish"
       },
         auto_install = true,
         highlight = {

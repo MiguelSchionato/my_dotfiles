@@ -1,8 +1,8 @@
-return { 
+return {
   -- ui
   require("plugins.ui.colorschemes.themes"),
   -- lsp
-  require("plugins.utils.completion"),
+  require("plugins.utils.completions"),
   --require ("plugins.lsp.lspconfig"),
   -- utils
   require ("plugins.utils.neotree"),
@@ -10,4 +10,5 @@ return {
   require ("plugins.utils.noice"),
   --require ("tokyonight")
   --require ("tokyonight")
+  require ("plugins.utils.lsp"),
 }

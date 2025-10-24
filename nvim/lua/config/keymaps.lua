@@ -18,7 +18,7 @@ vim.keymap.set({"n","v",}, "<C-j>", "ddp")
 vim.keymap.set({"n","v","i"}, "<C-S>", "<esc>:w!<CR>",{noremap=true,silent=true})
 vim.keymap.set({"n","v","i"}, "<C-Q>", "<esc>:q!<CR>",{noremap=true,silent=true})
 -- Sudo write
-vim.keymap.set("n", "<leader>w", "<cmd>w !sudo tee %<CR>",{noremap=true,silent=true}) 
+vim.keymap.set("n", "<leader>w", "<cmd>w !sudo tee %<CR>",{noremap=true,silent=true})
 -- neotree
 vim.keymap.set({"n","v"}, "<leader>e", ":Neotree toggle<CR>",{noremap=true,silent=true})
 
@@ -30,8 +30,13 @@ vim.keymap.set({"v","n","i","t"}, "<C-a>", "<esc>gg<S-v>G",{noremap=true,silent=
 
 
 -- api
-vim.keymap.set("n", "<leader>ct", function()
-  require("custom.cmp_api").toggle_autocomplete()
-end, { desc = "Ligar/Desligar Autocomplete do Cmp" })
-
+-- vim.keymap.set("n", "<leader>ct", function()
+--   require("custom.cmp_api").toggle_autocomplete()
+-- end, { desc = "Ligar/Desligar Autocomplete do Cmp" })
+-- Double brackets
+vim.keymap.set("i", "(", "()<esc>i")
+vim.keymap.set("i", "[", "[]<esc>i")
+vim.keymap.set("i", "{", "{<CR>}<esc>ko")
+vim.keymap.set("i", "'", "''")
+vim.keymap.set("i", "\"", "\"\"<esc>i")
 
